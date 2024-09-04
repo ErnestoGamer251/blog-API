@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Blog</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Manage Blog Posts</h1>
+    <button id="logout-button">Logout</button>
+    <div id="posts-container"></div>
+    
+    <h2>New Post</h2>
+    <form id="new-post-form">
+        <input type="text" id="title" placeholder="Post Title" required><br>
+        <textarea id="content" placeholder="Post Content" required></textarea><br>
+        <label>
+            <input type="checkbox" id="published"> Publish Now
+        </label><br>
+        <button type="submit">Create Post</button>
+    </form>
+
+    <script src="admin.js"></script>
+</body>
+</html>
